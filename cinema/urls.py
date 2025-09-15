@@ -30,8 +30,8 @@ urlpatterns = [
     path("genres/<int:pk>/", GenreDetail.as_view(), name="genre-detail"),
     path("actors/<int:pk>/", ActorDetail.as_view(), name="actor-detail"),
     path("actors/", ActorList.as_view(), name="actor-list"),
-    path("cinemahalls/", cinema_halls_list, name="cinema_hall-list"),
-    path("cinemahalls/<int:pk>/",
+    path("cinema_halls/", cinema_halls_list, name="cinema_hall-list"),
+    path("cinema_halls/<int:pk>/",
          cinema_halls_detail,
          name="cinema_hall-detail"),
     path("", include(router.urls))
